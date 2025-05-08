@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch Service Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/webfonts">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/less/">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/regular.min.css">
+    <script src="https://kit.fontawesome.com/a56b5691ec.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Quick<span>Fleet</span></div>
+   
+        <div class="actions">
+            <a href="userslogin.html" class="get-started-btn">Login</a>
+            <a href="#" class="download-btn">Download App</a>
+           </div>
+
+         <nav>
+
+           <div class="Nav-Links" id="NavLinks">   
+               <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="profiles.html.html">Dispatchers</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="uesrprofil.html">Profile</a></li>
+             </ul>
+            </div>
+             <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+         </nav>
+             
+             <!-- <div class="actions">
+                 <a href="usersignup.html" class="get-started-btn">Get started</a>
+                 <a href="#" class="download-btn">Download app</a>
+                </div> -->
+
+    </header>
+
+    <section class="profile-home">
+        <h2>All active dispatcher</h2>
+        <div class="row">
+            <div class="profile-card">
+                <h3>name: charls</h3>
+                <p>your price of delivery depends <br>
+                     on your location</p>
+                <img src="" alt="">
+                <a href="">chat dispatcher</a>
+            </div>
+
+            <div class="profile-card">
+                <h3>name: charls</h3>
+                <p>your price of delivery depends <br>
+                     on your location</p>
+                <img src="" alt="">
+                <a href="">chat dispatcher</a>
+            </div>
+
+            <div class="profile-card">
+                <h3>name: charls</h3>
+                <p>your price of delivery depends <br>
+                     on your location</p>
+                <img src="user-images/userImg.jpg" alt="">
+                <a href="">chat dispatcher</a>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <p>&copy; 2024 Dispatch Delivery Service. All rights reserved.</p>
+        <div class="social">
+            <h3>contact us on</h3>
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+            <a href="#"><i class="fa fa-instagram"> </i></a>
+            <a href="#"><i class="fa fa-twitter"></i> </a>
+            <a href=""><i class="fa fa-linkedin"></i> </a>
+        </div>
+    </footer>
+
+    <script src="fontawesome-free-6.6.0-web/js/"></script>
+
+
+
+    <script>
+        let navlinks = document.getElementById("NavLinks");
+
+        function showMenu() {
+           navlinks.style.right = "0" 
+        }
+
+        function hideMenu() {
+           navlinks.style.right = "-200px" 
+        }
+       
+        document.addEventListener("DOMContentLoaded", () => {
+          const faqItems = document.querySelectorAll(".faq-item")
+
+          faqItems.forEach((item) => {
+           const question = item.querySelector(".faq-question")
+           question.addEventListener("click", () => {
+            item.classList.toggle("open")
+           })
+          })
+        })
+
+    </script>
+    
+
+    
+</body>
+</html>

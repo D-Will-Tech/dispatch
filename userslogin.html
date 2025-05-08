@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dispatcher</title>
+    <link rel="stylesheet" href="userlogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign In to Dispatcher</h2>
+        <form action="dashboard.html" method="POST">
+            <div class="input-group">
+                <input type="text" placeholder="username" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <input type="password"  placeholder="password"  id="password" name="password" required>
+                <img src="Icon/eye-close.png" id="eyeicon" >
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="signup-link">Don't have an account? <a href="usersignup.html">Sign up</a></p>
+        </form>
+    </div>
+
+
+    <script>
+        const password = document.getElementById("password")
+        const eyeicon = document.getElementById("eyeicon")
+
+        eyeicon.addEventListener("click", () =>  {
+         if (password.type == "password") {
+            password.type = "text"
+            eyeicon.src = "Icon/eye-open.png"
+         }else{
+            password.type = "password"
+              eyeicon.src = "Icon/eye-close.png"
+         }
+
+        })
+    </script>
+    
+</body>
+</html>

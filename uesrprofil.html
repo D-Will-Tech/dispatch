@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatcher Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/webfonts">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/less/">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/regular.min.css">
+    
+</head>
+<body id="bodi">
+<div class="container">
+    <nav id="sidebar"> 
+        <i class="fa fa-times" aria-hidden="true" onclick="hideMnue()"></i>
+         <ul>
+           <li><a href="">Home</a></li>
+           <li><a href="">Dispatcher</a></li>
+            <li><a href="">Bookings</a></li>                                                      
+            <li><a href="">Messages</a></li>
+            <li><a href="">Settings</a></li>
+         </ul>
+    </nav>
+    
+    <div class="main-content">
+        <!-- next to solve -->
+        <div>
+           <i class="fa fa-bars" aria-hidden="true" id="showMenu"></i>
+           <i class="fa-solid  fa-toggle-on" id="toggleLight"></i>
+        </div>
+        <header id="userP">
+            <h1>Dashboard</h1>
+            <input type="text" placeholder="Search..." class="search">
+            <div class="user-profile" id="userP">
+                <img src="user-images/userImg.jpg" alt="User">
+                <span>John Doe</span>
+            </div>
+        </header>
+        
+        <section class="stats">
+            <div class="stat-box">
+                <h3>Active Dispatchers</h3>
+                <p>10</p>
+                <a href="">Check</a>
+            </div>
+            <div class="stat-box">
+                <h3>Recent Bookings</h3>
+                <p>8</p>
+                <a href="">Book!</a>
+            </div>
+            <div class="stat-box">
+                <h3>Total Messages </h3>
+                <p>25</p>
+                <a href="">Messages</a>
+            </div>
+            
+            <!-- New Account Balance Section -->
+            <div class="stat-box">
+              <!-- <img src="images/download (1).png" alt=""> -->
+           <h3>Account Balance</h3>
+           <p>$1,250</p>
+           <a href="">Top up</a>
+          </div>
+
+        </section>
+        
+        <section class="dispatcher-list">
+            <h2>Available Dispatchers</h2>
+            <div class="dispatcher">
+                <p>Name: Alex Green</p>
+                <p>Status: Online</p>
+                <button>Contact</button>
+            </div>
+            <div class="dispatcher">
+                <p>Name: Chris Blue</p>
+                <p>Status: Online</p>
+                <button>Contact</button>
+            </div>
+            <div class="dispatcher">
+                <p>Name: Chris Blue</p>
+                <p>Status: Online</p>
+                <button>Contact</button>
+            </div>
+            <div class="dispatcher">
+                <p>Name: Chris Blue</p>
+                <p>Status: Online</p>
+                <button>Contact</button>
+            </div>
+            <div class="dispatcher">
+                <p>Name: Chris Blue</p>
+                <p>Status: Online</p>
+                <button>Contact</button>
+            </div>
+            <!-- Add more dispatcher cards here -->
+        </section>
+
+        
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Dispatch Delivery Service. All rights reserved.</p>
+        <div class="social">
+            <h3>contact us on</h3>
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+            <a href="#"><i class="fa fa-instagram"> </i></a>
+            <a href="#"><i class="fa fa-twitter"></i> </a>
+            <a href=""><i class="fa fa-linkedin"></i> </a>
+        </div>
+    </footer>
+
+
+    <script>
+        const sidebar = document.getElementById("sidebar")
+        const showMenu = document.getElementById("showMenu");
+        
+         showMenu.addEventListener("click", () => {
+             
+             sidebar.style.left = "0" 
+         })
+        
+        
+        function hideMnue() {
+            sidebar.style.left = "-200px"   
+        }
+        
+        const toggleLight = document.getElementById("toggleLight")
+        const main = document.querySelector(".main-content")
+        const userP = document.getElementById("userP")
+       
+
+        toggleLight.addEventListener("click", () => {
+            
+            if (toggleLight.classList.contains("fa-toggle-on")) {
+                toggleLight.classList.remove("fa-toggle-on")
+                toggleLight.classList.add("fa-toggle-off")
+                main.style.background = "#333" 
+                main.style.color = "#333"
+                toggleLight.style.color = "white" 
+                userP.style.color = "white"
+                sidebar.style.background = "#fff"
+                sidebar.style.color = "green"
+                showMenu.style.color = "#fff"
+                
+                
+                
+            }else{
+                (toggleLight.classList.contains("fa-toggle-off")) 
+                toggleLight.classList.remove("fa-toggle-off")
+                toggleLight.classList.add("fa-toggle-on")
+                main.style.background = "none" 
+                toggleLight.style.color = "#333"
+                userP.style.color = "#000"  
+                sidebar.style.background = "#fff" 
+                showMenu.style.color = "#333"
+                
+            }
+        
+      
+        })
+    </script>
+</body>
+</html>
