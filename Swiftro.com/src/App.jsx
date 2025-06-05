@@ -3,6 +3,7 @@ import './App.css'
 import {Routes} from "react-router-dom";
 import {Route} from "react-router-dom"
 import { Homepage } from './Pages/Homepage';
+import { Aboutpage } from './Pages/Aboutpage';
 
   function App() {
     return(
@@ -10,6 +11,7 @@ import { Homepage } from './Pages/Homepage';
   
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<Aboutpage />} />
         
         </Routes>
       </>
