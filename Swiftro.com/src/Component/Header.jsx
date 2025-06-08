@@ -11,7 +11,7 @@ export function Header() {
            <li> <a  href="about">About</a></li>
            <li> <a   href="#">Customers</a></li>
              <li> <a href="#">Contact Us</a></li>
-            <button class="get-started">Get Started</button>
+            <button class="get-started">Active Dispatcher</button>
             </ul>
         </nav>
     </header>

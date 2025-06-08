@@ -169,6 +169,28 @@ export function Homepage() {
       </div>
     </section>
 
+
+
+    <section className="container download-app">
+      <div className="download-left">
+        <img src="/your-icon.svg" alt="Download Icon" className="download-icon" />
+        <h2>Download the app</h2>
+        <p>Order anything and track it in real time with the Swiftro app.</p>
+        <div className="store-buttons">
+          <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="/google-play-badge.png" alt="Google Play" />
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <img src="/app-store-badge.png" alt="App Store" />
+          </a>
+        </div>
+      </div>
+
+      <div className="download-right">
+        <img src="/app-screenshots.png" alt="App Screenshots" />
+      </div>
+    </section>
+
         </>
     )
     

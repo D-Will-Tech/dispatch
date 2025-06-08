@@ -212,6 +212,10 @@ background-color: #fff4e5;
 
  }
 
+
+
+ 
+
  /* ...existing code... */
 
 /* Responsive Styles */
@@ -373,5 +377,93 @@ background-color: #fff4e5;
 .join-card button:hover {
   background-color: #444;
   transition: background 0.3s ease;
+}
+
+.download-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+
+.download-left {
+  flex: 1;
+  max-width: 480px;
+}
+
+.download-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.download-left h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.download-left p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.store-buttons img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.download-right {
+  flex: 1;
+  text-align: right;
+}
+
+.download-right img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+.download-right img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .download-app {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .download-left,
+  .download-right {
+    max-width: 100%;
+  }
+
+  .download-right {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .download-left h2 {
+    font-size: 28px;
+  }
+
+  .download-left p {
+    font-size: 16px;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
 }
  
