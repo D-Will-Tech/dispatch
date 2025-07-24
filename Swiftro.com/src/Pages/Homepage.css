@@ -173,7 +173,7 @@ background-color: #fff4e5;
  }
 
  .card{
-    background: #6b6b6d;
+    background: #ffffff;
     border-radius: 10px;
     padding: 30px;
     text-align: left;
@@ -187,6 +187,7 @@ background-color: #fff4e5;
     transition: all .3s;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     cursor: pointer;
+    background: #6b6b6d;
  }
 
  .card .icon{
@@ -384,7 +385,17 @@ background-color: #fff4e5;
   align-items: center;
   justify-content: space-between;
   padding: 80px 40px;
-  background-color: transparent;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('https://swiftro.com/src/Images/download-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-top: 60px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+
   flex-wrap: wrap;
 }
 
@@ -465,5 +476,116 @@ background-color: #fff4e5;
   .store-buttons {
     justify-content: center;
   }
+}
+
+
+.footer {
+  background-color: #6b6b6d;
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-family: sans-serif;
+  position: relative;
+margin-top: 50px;
+
+  
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-col h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-apps img {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+}
+
+.footer-policy p {
+  margin: 6px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer-language {
+  margin-top: 40px;
+}
+
+.footer-language select {
+  padding: 10px 16px;
+  font-size: 14px;
+  background: transparent;
+  color: #333;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-apps {
+    align-items: center;
+  }
+
+  .footer-policy {
+    text-align: center;
+  }
+
+  .footer-language {
+    text-align: center;
+  }
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
 }
  
