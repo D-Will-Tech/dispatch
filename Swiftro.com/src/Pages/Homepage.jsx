@@ -2,9 +2,10 @@ import { Header } from "../Component/Header"
 import "./Homepage.css";
 import { Aboutpage } from "./Aboutpage";
 import { ServicePage } from "./ServicePage";
+import {Link} from "react-router-dom"
 
 export function Homepage() {
-    return(
+  return(
         <>
          <title>Swiftro.com</title>
         <Header />
@@ -17,8 +18,8 @@ export function Homepage() {
                        whether it's to run a quick errand, deliver a parcel, or handle a major haul.
                     </p>
                   <div className="homepage-buttons">
-                    <a href="#" className="btn-dark">Get started</a>
-                    <a href="#" className="btn-light">Learn more</a>
+                    <Link to="#" className="btn-dark">Get started</Link>
+                    <Link to="#" className="btn-light">Learn more</Link>
                   </div>
             </div>
                  
@@ -64,21 +65,21 @@ export function Homepage() {
                         <div className="icon">📦</div>
                         <h3>Multiple Account</h3>
                         <p>Manage all your dispatch operation with Multiple dispatcher support.</p>
-                        <a href="#" className="learn-link">Learn more →</a>
+                        <Link to="#" className="learn-link">Learn more →</Link>
                     </div>
 
                     <div className="card">
                         <div className="icon">💸</div>
                         <h3>Free Transfers </h3>
                         <p>Send delivery payments quickly and securely, helping you run faster logistics.</p>
-                        <a href="#" className="learn-link">Learn more →</a>
+                        <Link to="#" className="learn-link">Learn more →</Link>
                     </div>
 
                     <div className="card">
                         <div className="icon">🔐</div>
                         <h3>Unmatched Security</h3>
                         <p>Our platform provides peace of mind in a fast-growing digital dispatch world.</p>
-                        <a href="#" className="learn-link">Learn more →</a>
+                        <Link to="#" className="learn-link">Learn more →</Link>
                     </div>
                 </div>
 
@@ -178,12 +179,12 @@ export function Homepage() {
         <h2>Download the app</h2>
         <p>Order anything and track it in real time with the Swiftro app.</p>
         <div className="store-buttons">
-          <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+          <Link to="https://play.google.com" target="_blank" rel="noopener noreferrer">
             <img src="/google-play-badge.png" alt="Google Play" />
-          </a>
-          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link to="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
             <img src="/app-store-badge.png" alt="App Store" />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -248,6 +249,6 @@ export function Homepage() {
   
 
         </>
-    )
+  )
     
 }

@@ -1,24 +1,25 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 
 export function Header() {
-    return(
-       <header>
-        <a href="/" class="logo">SWIFTRO</a>
-        <nav className="nav-link">
-            <ul>
-           <li><a href="#">Solutions</a></li> 
-            <li> <a href="service">Services</a></li>
-           <li> <a href="about">About</a></li>
+ return(
+  <header>
+        <Link to="/" class="logo">SWIFTRO</Link>
+     <nav className="nav-link">
+        <ul>
+           <li> <Link to="#">Solutions</Link></li> 
+           <li> <Link to="service">Services</Link> </li>
+           <li> <Link to="about">About</Link></li>
            <li className="customer-link"> 
-            <a href="#">Customers</a>
+            <Link to="#">Customers</Link>
             <span className="upcoming">no customer yet</span>
            </li>
-             <li> <a href="#">Contact Us</a></li>
-            <button class="get-started">Active Dispatcher</button>
-            </ul>
-        </nav>
-    </header>
-    )
+             <li> <Link to="#">Contact Us </Link> </li>
+           <button class="get-started">Find Dispatcher</button>
+        </ul>
+     </nav>
+  </header>
+ )
     
 }
