@@ -42,8 +42,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
   flex-wrap: wrap;
+}
+
+.hero-image img{
+  border-radius: 20px;
+  border-top-right-radius: 50%;
+ border-bottom-left-radius: 30%; 
 }
 
 .hero-text {

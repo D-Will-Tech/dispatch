@@ -68,3 +68,75 @@ header {
 .nav-link ul li:hover::after{
     width: 100%;
 }
+
+.upcoming{
+    display: none;
+    position: absolute;
+    top : 50%;
+    left: 100%;
+    transform: translate(-50%);
+    background: #fff4e5;
+    color: #b45309;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-left: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    z-index: 10;
+
+
+}
+
+.customer-link{
+    position: relative;
+}
+
+.customer-link:hover .upcoming{
+    display: inline-block;
+
+}
+
+/* ...existing code... */
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    header {
+        /* flex-direction: column;
+        padding: 15px 20px;
+        align-items: flex-start; */
+        
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-link ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-link .get-started {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
+
+/* ...existing code... */

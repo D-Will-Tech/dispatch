@@ -212,6 +212,7 @@ background-color: #fff4e5;
     display: inline-block;
 
  }
+ 
 
 
 
@@ -221,7 +222,7 @@ background-color: #fff4e5;
 
 /* Responsive Styles */
 
-
+/* 
 @media (max-width: 700px) {
   .homepage {
     padding: 30px 10px;
@@ -287,7 +288,7 @@ background-color: #fff4e5;
   .logos {
     gap: 10px;
   }
-}
+} */
 
 /* ...existing code... */
 
@@ -448,7 +449,7 @@ background-color: #fff4e5;
   height: auto;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .download-app {
     flex-direction: column;
     text-align: center;
@@ -476,7 +477,7 @@ background-color: #fff4e5;
   .store-buttons {
     justify-content: center;
   }
-}
+}*/
 
 
 .footer {
@@ -484,16 +485,15 @@ background-color: #fff4e5;
   color: #fff;
   padding: 60px 40px 20px;
   font-family: sans-serif;
-  position: relative;
-margin-top: 50px;
-
-  
+  margin-top: 50px; 
 }
 
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
   gap: 40px;
 }
 
@@ -505,7 +505,10 @@ margin-top: 50px;
 .footer-links {
   display: flex;
   gap: 60px;
+  flex-direction: row;
+  align-items: start;
 }
+
 
 .footer-col h4 {
   font-weight: bold;
@@ -557,7 +560,7 @@ margin-top: 50px;
   cursor: pointer;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
@@ -581,11 +584,11 @@ margin-top: 50px;
   .footer-language {
     text-align: center;
   }
-}
-.footer-bottom {
+}*/
+ .footer-bottom {
   text-align: center;
   margin-top: 40px;
   font-size: 14px;
   color: #aaa;
-}
+} 
  

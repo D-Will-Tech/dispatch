@@ -18,36 +18,46 @@ export function ServicePage() {
         </div>
         <div className="hero-main">
           <div className="hero-image">
-            {/* Place your image here manually */}
+            <img src="/image-homepage2.png" alt="" />
           </div>
           <div className="hero-text">
-            <h1>Swiftro PRIME</h1>
-            <h3>Swiftro Prime gives you free deliveries and more</h3>
+            <h1>Swiftro delivers fast, secure and affordable</h1>
             <p>
-              Sign up in less than 2 minutes and enjoy Prime benefits for your next order!
+              Whether you're sending documents, groceries, food, or gifts — Swiftro has you covered with real-time tracking and dedicated dispatch riders. 
+               Enjoy affordable rates, doorstep pickups, and professional service within minutes.
             </p>
-            <button className="get-prime">Get Prime now</button>
+            <p>Sign up in under 2 minutes and get exclusive delivery perks and wallet bonuses</p>
+            <button className="get-prime">Start with Swiftro</button>
           </div>
         </div>
       </section>
 
       
       <section className="features-section">
+        <h2>Why Choose Swiftro?</h2>
+
         <div className="feature">
           <img alt="icon" />
-          <h3>Free unlimited deliveries</h3>
-          <p>Enjoy Swiftro Prime at 80% of supermarkets and 90% of restaurants, including top favorites.</p>
+          <h3>Real-Time Tracking</h3>
+          <p>Track your package live from pickup to delivery right from your dashboard</p>
         </div>
+
         <div className="feature">
           <img alt="icon" />
-          <h3>Exclusive Prime deals</h3>
-          <p>Save more with Swiftro Prime, enjoy bigger discounts and exclusive promotions.</p>
+          <h3>Fast Dispatch</h3>
+          <p>Our trained dispatchers respond within minutes to your delivery request.</p>
         </div>
+
         <div className="feature">
           <img alt="icon" />
-          <h3>No commitments</h3>
-          <p>Easily manage your subscription in the app: Automatic monthly renewals. Cancel anytime.</p>
+          <h3>Secure and Reliable</h3>
+          <p>Every delivery is insured, recorded, and handled with utmost care.</p>
         </div>
+
+       
+
+
+      
       </section>
 
       

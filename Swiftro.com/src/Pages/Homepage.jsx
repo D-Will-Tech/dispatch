@@ -204,7 +204,6 @@ export function Homepage() {
           <div className="footer-col">
             <h4>Let's do it together</h4>
             <ul>
-              <li>Careers</li>
               <li> for Partners</li>
               <li>Couriers</li>
               <li>Swiftro Business</li>
