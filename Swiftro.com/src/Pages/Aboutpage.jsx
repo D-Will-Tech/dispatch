@@ -1,21 +1,46 @@
 
 import "./Aboutpage.css";
 import { Header } from "../Component/Header";
+import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 
 
 
 
  export function Aboutpage() {
+ 
+  const [animate, setAnimate] = useState(false);
+  const aboutRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+     
+      ([entry]) => {
+        if (entry.isIntersecting){
+          setAnimate(true);
+          observer.disconnect();
+        }
+      },
+      {threshold: 0.3}
+
+    );
+    if(aboutRef.current){
+      observer.observe(aboutRef.current)
+    }
+    return () => observer.disconnect();
+
+  })
+
   return (
     <>
-
+   
     <title>About Us - Swiftro</title>
     
     <Header />
     
     <div className="about-container">
-      <div className="about-section">
-        <div className="about-image">
+      <div className="about-section" ref={aboutRef}>
+        <div className={`about-image ${animate ? "slide-in-left" : ""}`} >
           <img src="Images/about-us1.png" alt="About"/> 
           <div className="about-badge">
             <p className="badge-title">Trusted by 2M+ Users</p>
@@ -30,7 +55,7 @@ import { Header } from "../Component/Header";
         </div>
         
 
-        <div className="about-content">
+        <div className={`about-content  ${animate ? "slide-in-right" : ""}`}>
           <div className="about-tag">About Swiftro</div>
           <h1>Smart Logistics Solutions for Fast and Reliable Deliveries</h1>
           <p className="about-desc">
@@ -44,7 +69,7 @@ import { Header } from "../Component/Header";
             <li>Available  Nigeria</li>
           </ul>
 
-          <button className="about-button">Get Started with Swiftro</button>
+         <Link to="#"> <button className="about-button">Get Started with Swiftro</button></Link>
 
           <div className="about-stats">
             <div className="stat-box">

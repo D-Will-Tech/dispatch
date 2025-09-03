@@ -3,8 +3,65 @@ import "./Homepage.css";
 import { Aboutpage } from "./Aboutpage";
 import { ServicePage } from "./ServicePage";
 import {Link} from "react-router-dom"
+import { useRef, useState, useEffect } from "react";
 
 export function Homepage() {
+
+  const [animate, setAnimate] = useState(false);
+  const aboutRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting){
+          setAnimate(true);
+        
+        }else{
+          setAnimate(false);
+        }
+      },
+      {threshold: 0.3}
+    );
+    if(aboutRef.current){
+      observer.observe(aboutRef.current);
+    }
+    
+    return () => observer.disconnect();
+
+  }, [])
+
+
+  const [joinAnimate, setJoinAnimate] = useState(false)
+
+  const joinRef = useRef(null)
+  
+  useEffect(() => {
+
+    const joinObserver = new IntersectionObserver(
+       ([entry])  => {
+
+        console.log("join entry",  entry.isIntersecting)
+
+        if (entry.isIntersecting) {
+          setJoinAnimate(true)
+          
+        }else{
+          setJoinAnimate(false)
+        }
+
+       },
+       {threshold: 0.5}
+    );
+    if(joinRef.current){
+      joinObserver.observe(joinRef.current);
+    }
+
+    return () => joinObserver.disconnect()
+      
+
+  }, [])
+
+
   return(
         <>
          <title>Swiftro.com</title>
@@ -88,8 +145,8 @@ export function Homepage() {
         </section>
 
          <div className="about-container">
-      <div className="about-section">
-        <div className="about-image">
+      <div className="about-section" ref={aboutRef}>
+        <div className={`about-image ${animate ? "slide-in-left" : ""}`}>
           <img src="Images/about-us1.png" alt="About"/> 
           <div className="about-badge">
             <p className="badge-title">Trusted by 2M+ Users</p>
@@ -104,7 +161,7 @@ export function Homepage() {
         </div>
         
 
-        <div className="about-content">
+        <div className={`about-content ${animate ? "slide-in-right" : ""}`}>
           <div className="about-tag">About Swiftro</div>
           <h1>Smart Logistics Solutions for Fast and Reliable Deliveries</h1>
           <p className="about-desc">
@@ -139,10 +196,10 @@ export function Homepage() {
     </div>
 
         
-        <section className="join-section">
-      <h2>Let’s do it together</h2>
+        <section className="join-section" ref={joinRef} >
+      <h2 className={joinAnimate ? "slide-in-down" : ""}>Let’s do it together</h2>
       <div className="join-cards">
-        <div className="join-card">
+        <div className={`join-card ${joinAnimate ? "slide-in-down" : ""}`}>
           <div className="image-wrapper">
             <img src="/Images/riderImage.png" alt="rider" />
           </div>
@@ -151,7 +208,7 @@ export function Homepage() {
           <button>Register here</button>
         </div>
 
-        <div className="join-card">
+        <div className={`join-card ${joinAnimate ? "slide-in-down" : ""}`}>
           <div className="image-wrapper">
             <img src="/Images/partnerImage2.png" alt="partner" />
           </div>
@@ -160,7 +217,7 @@ export function Homepage() {
           <button>Register here</button>
         </div>
 
-        <div className="join-card">
+        <div className={`join-card ${joinAnimate ? "slide-in-down" : ""}`} >
           <div className="image-wrapper">
             <img src="/Images/careerImage.png" alt="careers" />
           </div>

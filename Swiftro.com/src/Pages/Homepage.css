@@ -591,4 +591,54 @@ background-color: #fff4e5;
   font-size: 14px;
   color: #aaa;
 } 
+
+/* {animation part} */
+
+@keyframes slideInLeft{
+  from {
+    opacity: 0;
+    transform: translate(-60px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(60);
+
+  }
+}
+
+@keyframes slideInRight {
+  from{
+    opacity: 0;
+    transform: translate(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+
+@keyframes slideInDown{
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-down {
+  animation:  slideInDown 0.9s ease-out;
+}
+
  
