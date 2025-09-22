@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export function Header() {
  return(
   <header>
-        <Link to="/" class="logo">SWIFTRO</Link>
+        <Link to="/" className="logo">SWIFTRO</Link>
      <nav className="nav-link">
         <ul>
            <li> <Link to="#">Solutions</Link></li> 
-           <li> <Link to="service">Services</Link> </li>
-           <li> <Link to="about">About</Link></li>
+           <li> <Link to="/service">Services</Link> </li>
+           <li> <Link to="/about">About</Link></li>
            <li className="customer-link"> 
             <Link to="#">Customers</Link>
             <span className="upcoming">no customer yet</span>

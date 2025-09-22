@@ -11,8 +11,8 @@ import { ServicePage } from './Pages/ServicePage';
       <>
   
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<Aboutpage />} />
+          <Route path="/" element={<Homepage  />} />
+          <Route path="/about" element={<Aboutpage ServicePage={ServicePage} />} />
           <Route path="/service" element={<ServicePage />} />
         
         </Routes>

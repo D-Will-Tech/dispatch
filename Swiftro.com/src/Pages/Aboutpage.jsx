@@ -2,34 +2,12 @@
 import "./Aboutpage.css";
 import { Header } from "../Component/Header";
 import { Link } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { Footer } from "../Component/Footer";
 
-
-
-
+     
  export function Aboutpage() {
  
-  const [animate, setAnimate] = useState(false);
-  const aboutRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-     
-      ([entry]) => {
-        if (entry.isIntersecting){
-          setAnimate(true);
-          observer.disconnect();
-        }
-      },
-      {threshold: 0.3}
-
-    );
-    if(aboutRef.current){
-      observer.observe(aboutRef.current)
-    }
-    return () => observer.disconnect();
-
-  })
+  
 
   return (
     <>
@@ -39,8 +17,8 @@ import { useState, useEffect, useRef } from "react";
     <Header />
     
     <div className="about-container">
-      <div className="about-section" ref={aboutRef}>
-        <div className={`about-image ${animate ? "slide-in-left" : ""}`} >
+      <div className="about-section">
+        <div className="about-image">
           <img src="Images/about-us1.png" alt="About"/> 
           <div className="about-badge">
             <p className="badge-title">Trusted by 2M+ Users</p>
@@ -55,7 +33,7 @@ import { useState, useEffect, useRef } from "react";
         </div>
         
 
-        <div className={`about-content  ${animate ? "slide-in-right" : ""}`}>
+        <div className="about-content">
           <div className="about-tag">About Swiftro</div>
           <h1>Smart Logistics Solutions for Fast and Reliable Deliveries</h1>
           <p className="about-desc">
@@ -88,6 +66,8 @@ import { useState, useEffect, useRef } from "react";
         </div>
       </div>
     </div>
+
+     <Footer/>
     </>
   );
 };

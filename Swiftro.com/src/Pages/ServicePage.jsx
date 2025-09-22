@@ -1,5 +1,6 @@
 import "./ServicePage.css";
 import { Header } from "../Component/Header";
+import { Footer } from "../Component/Footer";
 
 export function ServicePage() {
   return (
@@ -13,7 +14,7 @@ export function ServicePage() {
           <h2>Add your address and see if your local favourites are on Swiftro!</h2>
           <div className="address-bar">
             <input type="text" placeholder="📍 What's your address?" />
-            <button>📍 Use current location</button>
+            <button> <img src="icons/icons8-location-16.png" alt="" /> Use current location</button>
           </div>
         </div>
         <div className="hero-main">
@@ -37,19 +38,19 @@ export function ServicePage() {
         <h2>Why Choose Swiftro?</h2>
 
         <div className="feature">
-          <img alt="icon" />
+          <img src="icons/icons8-tracking-50.png" alt="icon" />
           <h3>Real-Time Tracking</h3>
           <p>Track your package live from pickup to delivery right from your dashboard</p>
         </div>
 
         <div className="feature">
-          <img alt="icon" />
+          <img src="icons/icons8-in-transit-50.png" alt="icon" />
           <h3>Fast Dispatch</h3>
           <p>Our trained dispatchers respond within minutes to your delivery request.</p>
         </div>
 
         <div className="feature">
-          <img alt="icon" />
+          <img src="icons/icons8-secure-50.png" alt="icon" />
           <h3>Secure and Reliable</h3>
           <p>Every delivery is insured, recorded, and handled with utmost care.</p>
         </div>
@@ -76,6 +77,9 @@ export function ServicePage() {
       </section>
 
     </div>
+
+
+    <Footer />
 
     </>
   );
