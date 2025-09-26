@@ -5,6 +5,7 @@ import { ServicePage } from "./ServicePage";
 import {Link} from "react-router-dom"
 import { useRef, useState, useEffect } from "react";
 import { Footer } from "../Component/Footer";
+import { Faq } from "./Faq";
 
 export function Homepage() {
 
@@ -40,8 +41,6 @@ export function Homepage() {
 
     const joinObserver = new IntersectionObserver(
        ([entry])  => {
-
-        console.log("join entry",  entry.isIntersecting)
 
         if (entry.isIntersecting) {
           setJoinAnimate(true)
@@ -250,6 +249,8 @@ export function Homepage() {
         <img src="/app-screenshots.png" alt="App Screenshots" />
       </div>
     </section>
+
+    <Faq />
 
 
 

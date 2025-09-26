@@ -27,6 +27,11 @@
   align-items: start;
 }
 
+.footer-col ul a{
+   text-decoration: none;
+   color: #fff;
+}
+
 
 .footer-col h4 {
   font-weight: bold;

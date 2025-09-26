@@ -22,13 +22,13 @@ import "./Footer.css"
           </div>
           <div className="footer-col">
             <h4>Links of interest</h4>
-            <ul>
-              <li>About us</li>
-              <li>FAQ</li>
-              <li>Help</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-              <li>Security</li>
+            <ul className="ul">
+             <a href=""><li>About us</li></a>
+             <a href="/Faq"><li>FAQ</li></a> 
+            <a href=""><li>Help</li></a>
+            <a href=""><li>Blog</li></a>
+             <a href=""> <li>Contact us</li></a>
+             <a href=""><li>Security</li></a>
             </ul>
           </div>
         </div>
