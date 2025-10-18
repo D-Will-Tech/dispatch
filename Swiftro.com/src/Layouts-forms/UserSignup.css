@@ -1,0 +1,212 @@
+.signup {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* Hero with background image */
+.signup-hero {
+  background: url("/images/user-bg.jpg") center/cover no-repeat;
+  height: 300px;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+
+.signup-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.signup-hero p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.signup-hero .note {
+  font-size: 14px;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Form section */
+.signup-form-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.signup-form .form-row {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 24px;
+
+}
+
+.signup-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+   margin-bottom: 15px;
+
+}  
+
+.signup-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #222;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.signup-form textarea {
+  resize: vertical;
+}
+
+.signup-form .form-group.full {
+  flex: 100%;
+}
+
+.signup-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap : 10px;
+  margin-bottom: 15px;
+}
+
+.signup-form .checkbox label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333;
+  ;
+}
+
+.signup-form .checkbox input {
+  margin-right: 10px;
+  color: #219150;
+}
+
+
+.end-point .submit-btn {
+  background: #27ae60;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+    margin: 20px auto 0;
+}
+
+.submit-btn:hover {
+  background: #219150;
+}
+
+/* Responsive styles for UserSignup */
+@media (max-width: 900px) {
+  .signup-form-container {
+    max-width: 80vw;
+    padding: 24px 8px;
+  }
+  .signup-hero {
+    height: 220px;
+    padding: 18px 4px;
+  }
+  .signup-hero h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-hero {
+    height: 160px;
+    padding: 12px 2px;
+  }
+  .signup-hero h1 {
+    font-size: 25px;
+    margin-bottom: 6px;
+    color: #F5A623;
+  }
+  .signup-hero p {
+    font-size: 10px;
+    margin-bottom: 3px;
+    
+  }
+  .signup-hero .note {
+    font-size: 12px;
+    margin-top: 14px;
+  }
+  .signup-form-container {
+    padding: 14px 2px;
+  }
+  .signup-form .form-row {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .signup-form input,
+  .signup-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .end-point .submit-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    margin: 14px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-hero {
+    height: 100px;
+    padding: 6px 1px;
+  }
+  .signup-hero h1 {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .signup-hero p {
+    font-size: 13px;
+  }
+  .signup-hero .note {
+    font-size: 8px;
+    margin-top: 8px;
+  color: red;
+  }
+  .signup-form-container {
+    padding: 5px 1px;
+  }
+  .signup-form label {
+    font-size: 12px;
+  }
+  .signup-form input,
+  .signup-form textarea {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .end-point .submit-btn {
+    padding: 7px 10px;
+    font-size: 13px;
+    margin: 5px auto 0;
+    border-radius: 20px;
+  }
+}
+
+

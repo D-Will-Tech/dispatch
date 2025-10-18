@@ -23,7 +23,7 @@ import "./Footer.css"
           <div className="footer-col">
             <h4>Links of interest</h4>
             <ul className="ul">
-             <a href=""><li>About us</li></a>
+             <a href="/about"><li>About us</li></a>
              <a href="/Faq"><li>FAQ</li></a> 
             <a href=""><li>Help</li></a>
             <a href=""><li>Blog</li></a>

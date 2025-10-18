@@ -41,7 +41,7 @@ export function Faq () {
 
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
      
     <section className="faq-section">
       <h2>Frequently Asked Questions</h2>

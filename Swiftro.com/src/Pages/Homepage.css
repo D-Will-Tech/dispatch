@@ -1,3 +1,6 @@
+
+
+
 .homepage{
     background: #f8f8f8;
     padding: 60px 0;
@@ -169,13 +172,14 @@ background-color: #fff4e5;
     gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 
  }
 
  .card{
     background: #ffffff;
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px; 
     text-align: left;
     width: 280px;
     height: 250px;
@@ -536,5 +540,307 @@ background-color: #fff4e5;
 .slide-in-down {
   animation:  slideInDown 0.9s ease-out;
 }
+
+/* ...existing code... */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .homepage-content,
+  .features-head,
+  .features-cards,
+  .join-cards,
+  .download-app {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .homepage-text {
+    padding-right: 20px;
+  }
+  .download-left,
+  .download-right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .homepage-text {
+    padding-right: 0;
+  }
+  .homepage-text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .homepage-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .homepage-buttons {
+    flex-direction: flex;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+  }
+  .homepage-image {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .homepage-image img {
+    max-width: 90vw;
+    height: auto;
+  }
+  .overlay {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    padding: 8px;
+  }
+  .trusted {
+    padding: 20px 10px;
+  }
+  .logos {
+    gap: 10px;
+  }
+  .features {
+    padding: 40px 10px;
+  }
+  .features-head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .features-head h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .features-head p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .features-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  .join-section {
+    padding: 40px 10px;
+    margin-top: 30px;
+  }
+  .join-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .join-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .join-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+  .image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .image-wrapper img {
+    width: 120px;
+    height: 100px;
+  }
+  .download-app {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  .download-left,
+  .download-right {
+    max-width: 100%;
+    text-align: center;
+  }
+  .download-right {
+    margin-top: 30px;
+  }
+  .download-left h2 {
+    font-size: 24px;
+  }
+  .download-left p {
+    font-size: 15px;
+  }
+  .store-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+  .download-right img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    padding: 20px 5px;
+  }
+  .homepage-text h1,
+  .features-head h2,
+  .join-section h2 {
+    font-size: 18px;
+  }
+  .homepage-text p,
+  .features-head p,
+  .join-card p,
+  .download-left p {
+    font-size: 13px;
+  }
+  .card,
+  .join-card {
+    padding: 12px 6px;
+    font-size: 13px;
+  }
+  .about-badge,
+  .overlay {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .btn-dark,
+  .btn-light,
+  .about-button,
+  .join-card button {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+  .image-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+  .image-wrapper img {
+    width: 80px;
+    height: 60px;
+  }
+}
+   
+
+
+/* ...existing code... */
+
+/* Responsive styles for about section */
+@media (max-width: 1024px) {
+  .about-section {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .about-image,
+  .about-content {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 0 10px;
+  }
+  .about-image,
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+  .about-badge {
+    position: static;
+    margin: 16px auto 0 auto;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .badge-avatars {
+    justify-content: center;
+  }
+  .about-content h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .about-desc,
+  .about-points li {
+    font-size: 15px;
+  }
+  .about-button {
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 14px;
+  }
+  .about-stats {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .stat-box {
+    min-width: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .about-badge {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  .about-content h1 {
+    font-size: 16px;
+  }
+  .about-desc,
+  .about-points li {
+    font-size: 12px;
+  }
+  .about-button {
+    font-size: 12px;
+    padding: 7px 0;
+  }
+  .stat-box h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ...existing code... */
+/* ...existing code... */
 
  

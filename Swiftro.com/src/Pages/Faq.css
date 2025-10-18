@@ -64,3 +64,51 @@
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
+
+
+/* ...existing code... */
+
+/* Responsive styles for FAQ section */
+@media (max-width: 768px) {
+  .faq {
+    padding: 32px 8px;
+  }
+  .faq-container {
+    padding: 0 4px;
+  }
+  .faq h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .faq-answer {
+    padding: 0 8px;
+  }
+  .faq-item.active .faq-answer {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 16px 2px;
+  }
+  .faq h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .faq-question {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .faq-answer p {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .faq-item.active .faq-answer {
+    padding: 8px;
+  }
+}

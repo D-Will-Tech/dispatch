@@ -75,8 +75,8 @@ export function Homepage() {
                        whether it's to run a quick errand, deliver a parcel, or handle a major haul.
                     </p>
                   <div className="homepage-buttons">
-                    <Link to="#" className="btn-dark">Get started</Link>
-                    <Link to="#" className="btn-light">Learn more</Link>
+                    <Link to="/UserSignup" className="btn-dark">Get started</Link>
+                    <Link to="/signup" className="btn-light">Dispatcher</Link>
                   </div>
             </div>
                  
