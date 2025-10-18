@@ -99,12 +99,12 @@
 
 .signup-form .checkbox input {
   margin-right: 10px;
-  color: #219150;
+  color: #F5A623;
 }
 
 
 .end-point .submit-btn {
-  background: #27ae60;
+  background: #F5A623;
   color: #fff;
   padding: 14px 28px;
   font-size: 16px;
@@ -116,7 +116,7 @@
 }
 
 .submit-btn:hover {
-  background: #219150;
+  background: #333;
 }
 
 /* Responsive styles for UserSignup */
@@ -188,7 +188,7 @@
   .signup-hero .note {
     font-size: 8px;
     margin-top: 8px;
-  color: red;
+    color: red;
   }
   .signup-form-container {
     padding: 5px 1px;

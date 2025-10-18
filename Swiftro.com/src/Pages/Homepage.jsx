@@ -76,7 +76,7 @@ export function Homepage() {
                     </p>
                   <div className="homepage-buttons">
                     <Link to="/UserSignup" className="btn-dark">Get started</Link>
-                    <Link to="/signup" className="btn-light">Dispatcher</Link>
+                    <Link to="/signup" className="btn-light">Driver</Link>
                   </div>
             </div>
                  
@@ -210,7 +210,7 @@ export function Homepage() {
 
         <div className={`join-card ${joinAnimate ? "slide-in-down" : ""}`}>
           <div className="image-wrapper">
-            <img src="/Images/partnerImage2.png" alt="partner" />
+            <img src="/Images/partnerImage2.png" alt="partner"/>
           </div>
           <h3>Become a partner</h3>
           <p>Grow with Swiftro! Our tools and users can help you boost sales and unlock opportunities!</p>
@@ -254,7 +254,7 @@ export function Homepage() {
 
 
 
-     <Footer />
+     <Footer/>
 
   
 

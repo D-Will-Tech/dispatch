@@ -10,6 +10,14 @@ export function Header() {
    const toggleEvent = () => setDraweropen(!draweropen);
    const closeEvent = () => setDraweropen(false);
 
+   const styles = {
+      Design: {
+      fontsiz: "20px",
+      fontWeight: "bold", 
+      color: "#000000"
+      }
+   }
+
  return(
   <header>
         <Link to="/" className="logo">SWIFTRO</Link>
@@ -27,6 +35,7 @@ export function Header() {
        
      <nav className={ `nav-link ${draweropen ? 'open' : ''}`}>
         <ul>
+           <li style={styles.Design}><Link to="/">Active Driver</Link></li>
            <li> <Link to="/contact">Contact Us</Link> </li> 
            <li> <Link to="/service">Services</Link> </li>
            <li> <Link to="/about">About</Link></li>

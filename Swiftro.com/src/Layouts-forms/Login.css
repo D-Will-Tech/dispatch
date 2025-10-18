@@ -47,7 +47,7 @@
 }
 
 .form-group input:focus {
-  border-color: #27ae60;
+  border-color: #F5A623;
   outline: none;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .btn:hover {
-  background: #219150;
+  background: #333;
 }
 
 /* Signup link */
